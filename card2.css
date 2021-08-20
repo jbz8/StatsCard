@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+#entire_card{
+    display: flex;
+    flex-direction: column;
+}
+
+.faded_text{
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+}
+.body_text{
+    color: white;
+}
+#insights{
+    color: slateblue;
+}
+#card_info{
+    border-radius: 0px 0px 10px 10px;
+    background-color:rgb(0, 0, 48);
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#three_stats{
+    padding-top: 5%;
+}
+#photo{
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+    width: 100%;
+    background-image:
+    linear-gradient(rgba(245,246,252,0.52),rgba(117,19,93,0.73)),
+    url("/Images/OfficePhoto.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media (min-width:650px) {
+    #entire_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    #card_info{
+        order: -1;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    #three_stats{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #photo{
+        border-radius: 0px 10px 10px 0px;
+        height:auto;
+    
+    }
+    
+}
